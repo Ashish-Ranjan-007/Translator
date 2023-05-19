@@ -1,0 +1,36 @@
+<script>
+   async function display(){ 
+        alert("clicked");
+    
+
+    }
+
+    async function Uploadthefile(){
+        try{
+            file =this.state;
+            const payload = await axios.post('http://localhost:4000/upload', file, {
+                headers: {
+                'Content-Type' : 'multipart/form-data'}
+            })
+            console.log(payload.status);
+        }
+         catch(err){
+            console.log(err); 
+         }
+    }
+
+    async function calldownload(){
+
+        try{    
+            let calldown = await axios.get('http://localhost:4000/download');
+            console.log("download api called")
+
+        }catch(err){
+            console.log(err);
+
+        }
+
+    }
+
+
+</script>

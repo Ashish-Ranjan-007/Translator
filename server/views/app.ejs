@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <%- include("./head"); %>
+
+</head>
+
+<body class="text-decoration-none">
+
+    <header>
+        <%- include('./navbar'); %>
+      </header>
+      <div >
+        <h2 class="text-center"> Translate Your Docs</h2>
+        <h4 class="text-center">Translate your PDF or Text or Docs in a language of your Choice!! </h4>
+        <div class="d-flex p-3 mb-5 bg-body-secondary justify-content-center align-items-center height-300">
+            <div>
+                <!-- <button class="btn btn-danger btn-lg text-center m-3"> Select a File </button> -->
+                <div class="input-group mb-2">
+                  <form action="/upload" method="POST" enctype="multipart/form-data" id="formid">
+                   
+                    <input type="file"  name="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">                  
+
+                  
+            
+                 </div>
+               
+                 <div>
+                    <select class="form-select mb-2" id="inputGroup" name="inputoption">
+                      <option selected>Choose language</option>
+                      <option value="en">English</option>
+                      <option value="hi">Hindi</option>
+                      <option value="fr">French</option>
+                      <option value="es">Spanish</option>
+                      <option value="ja">Japanese</option>
+                
+
+                    </select>
+                   <center> <button class="btn btn btn-danger" type="submit" id="inputGroupFileAddon04 m-auto">Translate</button></center>
+                  </div>
+                </form>               
+                
+            </div>
+            <div class="d-flex flex-column mt-10" >
+
+                <i class="fa-brands fa-google-drive m-2"></i>
+                <i class="fa-brands fa-dropbox m-2"></i>
+
+            </div>
+
+
+        </div>   
+      </div>
+      
+      <footer>
+        <%- include('./details'); %>
+        <%- include('./socialmedia'); %>
+        <%- include('./footer'); %>
+        <%- include('./footernotes'); %>
+        
+      </footer>
+      <%- include('./function'); %>
+      <script src="https://kit.fontawesome.com/04f9aa091a.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+   
+</body>
+</html>
