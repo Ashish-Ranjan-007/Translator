@@ -1,5 +1,6 @@
 node_modules/
-package-lock.json
-eng.traineddata
-index copy.js
-index2.js
+server/package-lock.json
+server/eng.traineddata
+server/index3.js
+server/index2.js
+server/indexcopy.js
