@@ -45,9 +45,9 @@ const upload = multer({ storage: storage});
     
 // ------LANDING PAGE API ------//
 
-router.set('view engine', 'ejs');
+app.set('view engine', 'ejs');
 
-router.get('/', (req,res)=>{
+app.get('/', (req,res)=>{
 
    return res.render('app', { });
 
@@ -55,7 +55,7 @@ router.get('/', (req,res)=>{
 
 // ------DOWNLOAD PDF API ------//
 
-router.get('/download_pdf', async (req,res)=>{
+app.get('/download_pdf', async (req,res)=>{
 
     const filepath = "./tempStore/output.pdf";
 
@@ -70,7 +70,7 @@ router.get('/download_pdf', async (req,res)=>{
 
 // ------DOWNLOAD AUDIO API ------//
 
-router.get('/download_mp3', async(req,res)=>{
+app.get('/download_mp3', async(req,res)=>{
 
     const filepath = "./tempStore/output.mp3";
     console.log("download mp3 api called")
@@ -79,7 +79,7 @@ router.get('/download_mp3', async(req,res)=>{
 
 })
 // ------DOWNLOAD TEXT API ------//
-router.get('/download_txt', async(req,res)=>{
+app.get('/download_txt', async(req,res)=>{
 
     const filepath = "./tempStore/output.txt";
 
@@ -91,7 +91,7 @@ router.get('/download_txt', async(req,res)=>{
 
 // ------UPLOAD FILE API ------//
 
-router.post('/upload', upload.single('file'), checkfile);
+app.post('/upload', upload.single('file'), checkfile);
 
 //--------- FUNCTION TO TRANSLATE TEXT ---------// 
 async function translatemech(text, lang_opt){
@@ -221,8 +221,7 @@ async function checkfile (req,res){
     }
 
 }
-// router.listen(4000, ()=>{console.log("server running at 4000")})
-export const handler = serverless(api);
+app.listen(4000, ()=>{console.log("server running at 4000")})
 
 // app.get("/download", (req,res)=>{
 
