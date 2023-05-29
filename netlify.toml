@@ -1,0 +1,19 @@
+[build]
+  base = "server/"
+  publish = "build-output/"
+  command = "npm i "
+
+[functions]
+directory = "functions/"
+  external_node_modules = ["express"]
+  node_bundler = "esbuild"
+[[redirects]]
+  force = true
+  from = "/app/*"
+  status = 200
+  to = "/.netlify/functions/app/"
+
+[dev]
+  command = "node index.js"
+  port = 4000
+  publish = "dist"

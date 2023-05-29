@@ -1,2 +1,5 @@
 node_modules/
 package-lock.json
+eng.traineddata
+index copy.js
+index2.js
