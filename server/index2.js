@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 
 
+
 // import translate from "translate";
 // translate.engine = "deepcl"; // "google", "yandex", "libre", "deepl"
 // translate.key = process.env.deepcl;
@@ -12,7 +13,10 @@ import translate from 'google-translate-api-x';
 // // or again
 // const { translate, Translator, speak, singleTranslate, getBatchInitData, batchTranslate, languages, isSupported, getCode } = require('google-translate-api-x');
 
-import DownloaderHelper from 'node-downloader-helper';
+
+import { speak } from 'google-translate-api-x';
+import { writeFileSync } from 'fs';
+
 
 
 
@@ -21,15 +25,21 @@ app.use(express.json());
 app.use(cors());
 
 
+const bolo = " 1 Read your assignment carefully The style, structure, and focus of your essay willvary depending on the type of essay you are writing If you've been assigned to write an essay for a class Helloo hell";
 
+console.log(bolo.length);
 
 
 app.set('view engine', 'ejs');
 
-// app.get('/', (req,res)=>{
-//     res.render('app',{});
+app.get('/', async (req,res)=>{
+    
+const voice = await speak(bolo , {to: 'hi'}); // => Base64 encoded mp3
+writeFileSync('./tempStore/bolo.mp3', voice, {encoding:'base64'});
+console.log(bolo.length);
+res.render('app',{});
 
-// })
+})
 
 
 app.post('/upload', async (req,res)=>{

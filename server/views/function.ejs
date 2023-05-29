@@ -1,36 +1,73 @@
 <script>
+    
+    function invokeloading(){
+       
+
+    }
+
+    document.getElementById("formid").addEventListener("submit", ()=>{
+        document.getElementById("button-container").innerHTML=`<center><div class="spinner-border " role="status">
+                    <span class="visually-hidden ">Loading...</span>
+                  </div> </center>`
+        document.getElementById("inputGroupFileAddon04").disabled = true;
+        })
+
+
+
    async function display(){ 
         alert("clicked");
     
 
     }
 
-    async function Uploadthefile(){
-        try{
-            file =this.state;
-            const payload = await axios.post('http://localhost:4000/upload', file, {
-                headers: {
-                'Content-Type' : 'multipart/form-data'}
-            })
-            console.log(payload.status);
-        }
-         catch(err){
-            console.log(err); 
-         }
+    // async function Uploadthefile(){
+    //     try{
+    //         file =this.state;
+    //         const payload = await axios.post('http://localhost:4000/upload', file, {
+    //             headers: {
+    //             'Content-Type' : 'multipart/form-data'}
+    //         })
+    //         console.log(payload.status);
+    //     }
+    //      catch(err){
+    //         console.log(err); 
+    //      }
+    // }
+
+    // async function calldownload(){
+
+    //     try{    
+    //         let calldown = await axios.get('http://localhost:4000/download');
+    //         console.log("download api called")
+
+    //     }catch(err){
+    //         console.log(err);
+
+    //     }
+
+    // }
+
+    async function download_pdf(){
+
+        
+
+        window.location.replace("http://localhost:4000/download_pdf");
+        document.getElementById("pdfdownload").disabled= true;
     }
 
-    async function calldownload(){
-
-        try{    
-            let calldown = await axios.get('http://localhost:4000/download');
-            console.log("download api called")
-
-        }catch(err){
-            console.log(err);
-
-        }
+    async function download_txt(){
+        alert("download_text called");
+        window.location.replace("http://localhost:4000/download_txt")
 
     }
 
+    async function download_mp3(){
+
+
+    alert("download mp3 called")
+    window.location.replace("http://localhost:4000/download_mp3");
+    
+        
+    }
 
 </script>
