@@ -2,30 +2,37 @@
 <html lang="en">
 <head>
  <%- include("./head"); %>
+ <style>
+
+  .h-80{
+    height: 80px;
+  }
+  </style>
 
 </head>
+
 
 <body class="text-decoration-none">
 
     <header>
         <%- include('./navbar'); %>
       </header>
-      <div >
-        <h2 class="text-center"> Translate Your Docs</h2>
-        <h4 class="text-center">Translate your PDF or Text or Docs in a language of your Choice!! </h4>
+      <div> 
+        <div class="m-4 p-4">
+          <h2 class="text-center"> Translate Your Docs</h2>
+          <h4 class="text-center">Translate your PDF or Text or Docs in a language of your Choice!! </h4>
+        </div>
         <div class="d-flex p-5 mb-5 bg-body-secondary justify-content-center align-items-center height-300">
             <div>
                 <!-- <button class="btn btn-danger btn-lg text-center m-3"> Select a File </button> -->
                 <div class="input-group mb-2">
-                  <form action="/upload" method="POST" enctype="multipart/form-data" id="formid">
+                  <form action="/upload" id="formid" method="POST" enctype="multipart/form-data" >
                    
-                    <input type="file"  name="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" required>                  
-
-                  
+                    <input type="file"  name="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" required>                
             
-                 </div>
-               
-                 <div>
+                 
+                    <br>
+                 <div class="">
                     <select class="form-select mb-2" id="inputGroup" name="inputoption" required>
                       <option selected>Choose language</option>
                       <option value="AF">Afrikaans</option>
@@ -102,31 +109,27 @@
                       <option value="VI">Vietnamese</option>
                       <option value="CY">Welsh</option>
                       <option value="XH">Xhosa</option>
-
-                
-
                     </select>
-                   <div id= "button-container"><center> <button class="btn btn btn-outline-danger  " type="submit" id="inputGroupFileAddon04">Translate</button></center>
-                   </div>
                   </div>
-
-                   
-
+                  <div id= "button-container"><center> <button class="btn btn btn-outline-danger m-3" type="submit" id="inputGroupFileAddon04">Translate</button></center>
+                  </div>               
                 </form>               
                 
             </div>
-            <div class="d-flex flex-column mt-10" >
+            <!-- <div class="d-flex flex-row" >
 
                 <i class="fa-brands fa-google-drive m-2"></i>
                 <i class="fa-brands fa-dropbox m-2"></i>
 
+            </div> -->
+
             </div>
-
-
         </div>   
       </div>
-      
+      <div class="p-4 bg-ye"><%- include('./features')%></div>
       <footer>
+     
+      
         <%- include('./details'); %>
         <%- include('./socialmedia'); %>
         <%- include('./footer'); %>

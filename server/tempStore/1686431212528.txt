@@ -1,0 +1,63 @@
+O Leveraged React Js resources for all data access, encapsulating URL's and standardizing data access interfaces.
+
+O Maintaining Parent and Child elements by using State and Props in React 5.
+
+O React and Functional Driven Javascript expert in SPA's, Ul Components, Mobile web and Performance optimization.
+
+O skilled in leading frameworks as React JS to build high-quality, scalable and reusable components and Front-end solution.
+
+O The front-end use HTMLS, CS53, React J5, JQuery and Bootstrap to build a single page web app that communicate with back-
+end via RESTful API.
+
+O Responsible for implementing Ul mockups, integrating third party React libraries, and handling/creating Redux store data.
+
+O The back-end use of Node Js, Express J5, MongoDB and Mongoose, the complete MERN Stack to provide RESTful API.
+
+O Worked with Gulp, Node Packet Manager, MongoDB and used React J5 library functions for the logical implementation part
+at client side for all the application.
+
+O Implemented generating the verification hash code using Node J$ and added user validations and user permissions by using
+Node Js.
+
+O Created React s for reusable components (multi-field form elements), background file uploads.
+
+O Implemented React J$ Controllers to maintain each view data.
+
+O Architected and Developed for Large Scale Javascript Application with React J5.
+
+O Migrated existing codebase from JSP to J§ and HTMLS and rebuilt React components in ES6.
+
+O Used various properties, parameters in £56 and performed UNIT testing with Jasmine and web-services like RESTful APL.
+
+O Used D3Js to build data visualizations to monitor file server load, web server speeds and data processing.
+
+O Developed certain features of the application functionality L.e. CRUD (Create, Read, Update, Delete) features using
+Require.js and Responsive Design.
+
+O Worked with Angular J$ Forms, Validations, Modules, Factory Services, DOM, Events, Expressions, Directives, Controllers,
+Filters, $http, $q.
+
+O Used $http with Angular J$ Interceptors MEAN Stack to make sure the requests were valid and used ul-router to handle
+nested views and avoid page redirection.
+
+O Implemented a custom Node J$ script to act as a PROXY for connecting to the server.
+
+O Extensive usage of Javascript, React J5, Node J5, Bootstrap, JQuery/AJAX, JSON, HTML4/S, CS52/3.
+
+O Evaluate demo and select new Javascript technologies and development patterns to be leveraged across the team.
+
+O Implemented the function to send and receive AMQP messages on RabbitMQ synchronously and asynchronously.
+
+O Developed non-functional HTMLS, CSS3 pages from the mock-ups and involved in Ul review with Ul architect and Business
+units.
+
+O Used Karma & Jasmine for the frontend (Angular J5) unit testing and Mocha & Chai for the backend (Node JS).
+
+O Automated the ATDD test scripts using Sauce Labs, ATDD testing using Cucumber and Selenium Webdriver.
+
+© Open shift Environment (OSE3) as a Docker to run the application and Jenkins to CI/CD of the project.
+
+O Very proficient knowledge of JIRA (Rally) to track issues and communicate with other teams at various environments.
+
+O Involved in all the stages of Software Development Life Cycle like Application Design, Development, Debugging and Testing
+all applications.

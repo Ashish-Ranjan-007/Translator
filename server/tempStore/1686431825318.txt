@@ -1,0 +1,26 @@
+TECHNICAL SKILL:
+
+Ul Web Technologies: HTML/HTMLS, CSS/CSS3, SASS, LESS, XHTML, XML, Javascript, ES6, AJAX, JQuery, WordPress, Typescript JSON,
+Bootstrap, OAuth, Angular J5, Reacts, Backbone JS, Express JS, D3J5, Node Js, Require J5, Common J5.
+
+1DE Editor: Eclipse6.0.1, JBuilder05/06, RAD, WSAD, Eclipse, Notepad-++, Dream weaver, Sublime Text3, NetBeans, WebMatrix,
+Webstorm, Visual Studio Code, Bonita.
+
+Databases: Oracle DB, MySQL Server, Mongo DB.
+
+Version Controls: GIt, Github, Bit Bucket, SN, TFS.
+
+F Frameworks: Angular J5, Node J5, Backbone Js, ExtJs.
+
+Languages: C, C++, JAVA, MySQL, C#, VB.Net, ASP.Net, Web Services.
+
+Debugging Tools: Chrome Elements Inspector, Firebug, IE Tester.
+
+Application/webservers: IBM Web Sphere, Apache Tomcat, BEA WebLogic 8.1, ] Boss, HTTP Web Server.
+
+Cloud Platform: OSE3, AWS, Azure.
+
+Testing Tools and Logging Frame Works: Junit3.8/4.0, Load runner, Jasmine, Mockito, Selenium, T-probe, RabbitMQ, Easy Mock,
+Protractor, Gherkin scripts, Cucumber, Sauce Labs.
+
+Methodologies: Agile, Rational Unified Process (RUP), UML Waterfall.

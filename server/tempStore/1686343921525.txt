@@ -1,0 +1,58 @@
+O Over 8 years of professional exposure in Javascript technology such as React Js, Angular Js, D3 Js, Backbone JS, MongoDB,
+Express.js and Node JS.
+
+O 4+ years of strong experience in building ecommerce application using the Javascript MEAN Stack and MERN Stack using
+Redux, Flux, Common.Js, Babel+ES6, EXT J$ and Web - Pack for Single Page Application development.
+
+O Expertise In developing web pages using HTMLS, CSS3, MVC, SASS, LESS, Object Oriented Java script, ES6, JQuery, AJAX,
+JSON, XML. Good understanding of Document Object Model (DOM) and DOM Functions.
+
+O Extensive use of Node environment using NPM, Grunt, Gulp, Maven, Bower and Mongo DB along with Mongoose.JS to
+create server side applications and wrote MapReduce program to sort the words in a file.
+
+O Expertise In creating the user validation forms and using the RESTful services for sending the data to the server.
+
+O Expert in designing web applications and web contents utilizing various Search Engine Optimization (SEO) techniques.
+
+O Expert in HTMLS/CSS3 development and have experience in Backbone.js, Require.js, Node js, Angular JS, D3.JS, Ext.s, Rxjs,
+Responsive design.
+
+O Good experience in using components, Forms, Events, Keys, Router, Animations and Flux concept.
+
+O Used Angular modules like Angular-animate, Angular-Cookies, Angular-Filter, Angular-Mocks, Angular - Resource,
+Angular- Route, Angular-Sanitize, Angular-Touch and Angular-Ul-Bootstrap.
+
+O Used Node Package Manager (NPM) to manage the modules and used t to Install useful tools such as Grunt, Gulp, Groovy,
+Express, underscore js, require s, crypto.js, passport js, mongoose, mongo.js, body- parser, bcrypt js and socket.io.
+
+O Good experience on working with CSS Background, padding, table, Animations, Pseudo classes and Layouts, positioning,
+border, margin, Pseudo elements and CSS behaviors including the Box model.
+
+O Created visual design of graphic elements like forms, logos, icons and also creating interactive presentations Photoshop,
+Marvel, Wireframes, intro animations, technical illustrations.
+
+O Good knowledge on AWS cloud formation templates and configured SQS service through Java AP to send and receive the
+information.
+
+O Hands-on experlence In using Message broker RabbitMQ.
+
+O Good knowledge of MVC and Flux architectural pattern and its implementation in user Interfaces.
+
+© Solid working experience in various IDE's: Notepad-++, Sublime Text, Komodo IDE, Eclipse, visual studio.
+
+O Worked on writing grunt, gulp, groovy tasks for build scripts, minified and bundled the Javascript code.
+
+© Working knowledge on Jasmine, Karma, Protractor, Chai, Mocha, Junit, Mockito and Javascript unit testing framework
+and Module bundiler Rollup, Webpack.
+
+O strong experlence with the version controls GIT, GITHUB, Bit Bucket, SVN and Package manager NPM, Bower.
+
+O Good Understanding of RDBMS through Database Design, writing queries and stored procedures using databases like
+Oracle, MysQL and SQL Server.
+
+O Extensive experience in designing and developing enterprise applications for J2€E platform using MVC, JAVA, JDBC/ODBC,
+JSP, Servlet, Struts, EJB, Hibernate, Java Mail, JNDI, Apache Ant.
+
+O Graphic design experience in Adobe Photo shop, Fireworks, Flash, Dream Weaver and Microsoft Office.
+
+O Created Sketches, journey maps, mock-ups, wireframes, marvel, Photoshop, persons and prototype, Presented UX

@@ -1,0 +1,54 @@
+<script>
+    
+
+   async function display(){ 
+        alert("clicked");
+
+    }
+
+    async function download_pdf(temp){ 
+        
+        text= "Are you sure to download the pdf file?";
+        if (confirm(text) == true) {
+            document.getElementById("pdfdownload").disabled= true;
+        // let pulldata = await axios(`http://localhost:4000/download_pdf/${temp}`);
+            window.location.replace(`http://localhost:4000/download_pdf/${temp}`);
+        }
+    }
+    async function download_txt(temp){
+            
+        text= "Are you sure to download the txt file?";
+        if (confirm(text) == true) {
+            document.getElementById("txtdownload").disabled= true;
+            window.location.replace(`http://localhost:4000/download_txt/${temp}`);
+            
+            } 
+
+    }
+
+    async function download_mp3(temp){  
+        
+        text= "Are you sure to download the audio file?";
+        if (confirm(text) == true) {
+            document.getElementById("mp3download").disabled= true;
+            window.location.replace(`http://localhost:4000/download_mp3/${temp}`);
+        } 
+        
+    }
+
+    async function playfunc(){   
+        let extracttemp = temp.split('/').slice(1).join('/');
+        console.log("printing", extracttemp);
+         
+        let sendata = await axios(`http://localhost:4000/play/${extracttemp}`)
+        console.log("temp called ")
+        // window.location.replace("http://localhost:4000/play");
+    
+        
+    }
+
+    
+
+
+
+</script>
