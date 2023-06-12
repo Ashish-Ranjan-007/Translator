@@ -3,7 +3,7 @@ import { writeFileSync } from 'fs';
 import express, { Router } from 'express';
 import serverless from 'serverless-http';
 import HttpsProxyAgent from 'http-proxy-agent';
-
+import fetch from 'node-fetch';
 
 const require = createRequire(import.meta.url);
 const app = express();
@@ -143,7 +143,7 @@ console.log("name: ", name,"folder", folder)
 //--------- FUNCTION TO TRANSLATE TEXT ---------// 
 async function translatemech(text, lang_opt){
     const temptranslatedText = await translate(text, {to: (lang_opt.toLowerCase()),forceBatch: true,rejectOnPartialFail:false
-    });
+        ,requestFunction: fetch});
     
     console.log("TRANSLATED line 97===========================")
     console.log( temptranslatedText);
@@ -330,7 +330,7 @@ async function checkfile (req,res){
                         //  requestOptions:{agent: new HttpsProxyAgent('https://46.219.80.142')}//
                     
                         });
-                    // console.log("tempcheck----------------------------", tempchunk) ;
+                    console.log("tempcheck----------------------------", tempchunk) ;
                     tempchunk.forEach(element => {
                         try{
                             chunks.push(element.text);  
@@ -342,7 +342,7 @@ async function checkfile (req,res){
                     });
             
                      para = await chunks.join('');
-                    // console.log("para------------------------",para);
+                    console.log("para------------------------",para);
                     translatedText = para;
                     res.render('preview', { extractedText:text, translatedText:para , fullpath: fullpath}) 
         

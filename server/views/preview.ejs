@@ -90,11 +90,11 @@
       // console.log(`${temp}.mp3`);
       let extracttemp = temp.split('/').slice(1).join('/');
       console.log("printing", extracttemp);
-      let exactpath = `http://localhost:4000/play/${extracttemp}.mp3`
-      var divloc = document.getElementById("setpath");
+      // let exactpath = `http://localhost:4000/play/${extracttemp}.mp3`
+      // var divloc = document.getElementById("setpath");
 
       const audiobox = `<audio controls>
-        <source src= ${exactpath} type="audio/mp3"/>
+        <source src= ${exactpath} type="audio/mp3 onClick="playfunc()"/>
         </audio>`
 
       divloc.innerHTML = audiobox;
