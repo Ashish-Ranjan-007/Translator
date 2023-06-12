@@ -3,6 +3,7 @@ server/package-lock.json
 server/index3.js
 server/index2.js
 server/indexcopy.js
-server/tempStore
-server/files
+server/index.js
+server/userContoller.js
+server/trial2.js
 server/eng.traineddata
