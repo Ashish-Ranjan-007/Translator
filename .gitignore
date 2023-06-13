@@ -7,3 +7,4 @@ server/index.js
 server/userContoller.js
 server/trial2.js
 server/eng.traineddata
+server/views/coordinate.html
