@@ -274,7 +274,7 @@ async function checkfile (req,res){
                     var sentence = await text.replace(/(\.+|\:|\!|\?)(\"*|\'*|\)*|}*|]*)(\s|\n|\r|\r\n)/gm, "$1$2|").split("|");
             // console.log("sentence-----------------", sentence);
                     var chunks =[]
-                    let tempchunk =  await translate(sentence, {to: lang_opt.toLowerCase(), forceTo: true, rejectOnPartialFail: false
+                    let tempchunk =  await translate(sentence, {to: lang_opt.toLowerCase(), forceTo: true, rejectOnPartialFail: false ,requestFunction: fetch
                  //requestOptions:{agent: new HttpsProxyAgent('https://46.219.80.142')}//
             
                         });
@@ -326,7 +326,7 @@ async function checkfile (req,res){
                     var sentence = await text.replace(/(\.+|\:|\!|\?)(\"*|\'*|\)*|}*|]*)(\s|\n|\r|\r\n)/gm, "$1$2|").split("|");
                     console.log("sentence-----------------", sentence);
                     var chunks =[]
-                    let tempchunk =  await translate(sentence, {to: lang_opt.toLowerCase(), forceTo: true, rejectOnPartialFail: false,
+                    let tempchunk =  await translate(sentence, {to: lang_opt.toLowerCase(), forceTo: true, rejectOnPartialFail: false,,requestFunction: fetch
                         //  requestOptions:{agent: new HttpsProxyAgent('https://46.219.80.142')}//
                     
                         });
