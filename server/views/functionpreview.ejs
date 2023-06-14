@@ -1,10 +1,6 @@
 <script>
     
 
-   async function display(){ 
-        alert("clicked");
-
-    }
 
     async function download_pdf(temp){ 
         
@@ -13,6 +9,8 @@
             document.getElementById("pdfdownload").disabled= true;
         // let pulldata = await axios(`http://localhost:4000/download_pdf/${temp}`);
             window.location.replace(`https://translator-61w0.onrender.com/download_pdf/${temp}`);
+        // window.location.replace(`http://localhost:4000/download_pdf/${temp}`);
+        
         }
     }
     async function download_txt(temp){
@@ -37,16 +35,34 @@
     }
 
     async function playfunc(){   
-        let extracttemp = temp.split('/').slice(1).join('/');
-        console.log("printing", extracttemp);
-         
+        let extracttemp = temp.split('/').slice(1).join('/');        
         let sendata = await axios(`https://translator-61w0.onrender.com/play/${extracttemp}`)
-        console.log("temp called ")
+        
         // window.location.replace("http://localhost:4000/play");
     
         
     }
 
+    async function copy_input_text(){
+        let copier = document.getElementById("text_input").innerText;
+        try {
+            
+        await  navigator.clipboard.writeText(copier);
+        alert("Input text copied to clipboard");
+        } catch (error) {
+            console.error('failed to copy')            
+        }
+    }
+    async function copy_translate_text(){
+        let copier = document.getElementById("text_translate").innerText;
+        try {
+            
+        await  navigator.clipboard.writeText(copier);
+        alert("Translated text copied to clipboard");
+        } catch (error) {
+            console.error('failed to copy')            
+        }
+    }
     
 
 

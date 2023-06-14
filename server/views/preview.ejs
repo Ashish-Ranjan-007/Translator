@@ -5,13 +5,6 @@
   <%- include("./head"); %>
 
 </head>
-<style>
-
-
-
-
-
-</style>
 
 <body class="text-decoration-none">
   <%- include('./functionpreview'); %>
@@ -35,19 +28,24 @@
           <center>
             <h3 class="c-rd">Input Text</h3>
           </center>
-          <i class="fa-sharp fa-regular fa-copy fa-2xl"></i>
-          <textarea class="b-cl1 p-5 text-align-center shadow-lg p-3 mb-5 bg-body-tertiary rounded" name="" id="" cols="60"
-            rows="20"><%= extractedText %>
-            </textarea>
+         
+
+          <div class="input b-cl1 m-5 text-align-center shadow-lg bg-body-tertiary rounded" name="" id="" cols="60"
+          rows="20"> <i onclick="copy_input_text()" class = "clipboard fa-sharp fa-regular fa-clipboard fa-2xl" style="color: #FB3569;"></i><div class="inputtext m-1 p-5" style="overflow:scroll" id="text_input" contenteditable="true" ><%= extractedText %></div></div>
+          
         </div>
 
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
           <center>
             <h3 class="c-tl">Translated Text</h3>
           </center>
-          <div><i class="fa-sharp fa-regular fa-copy fa-2xl"></i>
-            <textarea class="b-cl2 p-5 text-align-center shadow-lg p-3 mb-5 bg-body-tertiary rounded" name="" id="" cols="60"
-              rows="20"><%= translatedText %> </textarea></div>
+          <div class="input b-cl2 m-5 text-align-center shadow-lg bg-body-tertiary rounded" name="" id="" cols="60" rows="20">
+              <i onclick="copy_translate_text()"class = "clipboard fa-sharp fa-regular fa-clipboard fa-2xl" style="color: #51EAEA;"></i>
+              <div class="inputtext m-1 p-5" style="overflow:scroll" id="text_translate" contenteditable="true"><%= translatedText %>
+          </div>
+        </div>
+          
+        </div>
         </div>
       </div>
 
@@ -87,15 +85,15 @@
       // document.getElementById("setpath").src= `${temp}.mp3`;
       // console.log(`${temp}.mp3`);
       let extracttemp = temp.split('/').slice(1).join('/');
-      console.log("printing", extracttemp);
+   
       // let exactpath = `http://localhost:4000/play/${extracttemp}.mp3`
-      // var divloc = document.getElementById("setpath");
+      // // var divloc = document.getElementById("setpath");
 
-      const audiobox = `<audio controls>
-        <source src= ${exactpath} type="audio/mp3 onClick="playfunc()"/>
-        </audio>`
+      // const audiobox = `<audio controls>
+      //   <source src= ${exactpath} type="audio/mp3 onClick="playfunc()"/>
+      //   </audio>`
 
-      divloc.innerHTML = audiobox;
+      // divloc.innerHTML = audiobox;
 
 
     </script>
