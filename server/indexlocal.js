@@ -215,7 +215,7 @@ async function checkfile (req,res){
     const lang_opt= (req.body["inputoption"]);
     console.log("language opted", lang_opt);
     const filename = req.file.originalname.split(".");
-    const file_extension = filename[filename.length-1];
+    const file_extension = filename[filename.length-1].toLowerCase();
     console.log("file extention detected",file_extension);
     var translatedText="initial";
     var extractedText ="initial";
